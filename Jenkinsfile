@@ -1,5 +1,9 @@
 pipeline {
-    agent { docker { image 'maven:3.6-openjdk-8' } }
+    agent {
+        docker {
+            image 'maven:3.6-openjdk-8'
+             }
+         }
     stages {
         stage('build') {
             steps {
